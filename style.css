@@ -196,3 +196,53 @@ aside .info-total .per-person {
   font-weight: 700;
   box-shadow: 10px 10px 10px;
 }
+
+@media (min-width: 320px) and (max-width: 480px) {
+  body {
+    overflow: hidden;
+  }
+
+  main {
+    width: 350px;
+    height: 600px;
+  }
+  aside {
+    left: 180px;
+    top: 540px;
+    height: 205px;
+  }
+
+  #reset-btn {
+    top: 60px;
+  }
+
+  .tip-buttons {
+    grid-template-columns: repeat(2, 2fr);
+  }
+
+  input {
+    width: 250px;
+  }
+
+  .icon-person {
+    position: absolute;
+    left: 70px;
+    top: 385px;
+  }
+
+  .tip-buttons button {
+    width: 120px;
+  }
+
+  .tip-buttons input {
+    width: 120px;
+  }
+
+  label {
+    text-align: center;
+  }
+
+  #btn-label {
+    left: 70px;
+  }
+}
