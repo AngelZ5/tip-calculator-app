@@ -7,12 +7,20 @@ document.addEventListener("DOMContentLoaded", function () {
   const peopleLabel = document.querySelector("#people-label");
   const error = "Can't be Zero";
 
+  const resetButton = document.querySelector("#reset-btn");
   const buttons = document.querySelectorAll(".tip-buttons button");
   const customTipInput = document.querySelector(
     ".tip-buttons input[type='number']"
   );
   const tipAmountDisplay = document.getElementById("value-amount");
   const totalAmountDisplay = document.getElementById("value-total");
+
+  function reset() {
+    resetButton.addEventListener("click", function () {
+      location.reload();
+    });
+  }
+  reset();
 
   function billInputCheck() {
     dollarIcon.style.display = "none";
